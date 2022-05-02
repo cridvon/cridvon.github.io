@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+}
+
+body {
+  /*height: 100%;*/
+  text-align: center;
+  background-color: #191919;
+  font: 16px verdana;
+  color: #ECDBBA;
+  margin: 15px auto;
+}
+
+.agrupar {
+  width: 50%;
+  margin: 15px auto;
+  border: 1px solid #ECDBBA;
+  background: #C84B31;
+  border-radius: 10px;
+
+
+}
+
+
+.contact_form {
+  background-color: #2D4263;
+  border: 1px solid #ECDBBA;
+  width: 50%;
+  margin: 15px auto;
+  text-align: center;
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+}
+
+input {
+  background-color: #2D4263;
+  width: 75%;
+  height: 40px;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ECDBBA;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+input:focus {
+
+  background-color: #C84B31;
+  border-color: #C84B31;
+  color: #ECDBBA;
+}
+
+input:hover {
+  background-color: #C84B31;
+  border-color: #C84B31;
+  color: #ECDBBA;
+}
+
+textarea {
+  background-color: #2D4263;
+  width: 75%;
+  height: 150px;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ECDBBA;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  color: #ECDBBA;
+  text-transform: uppercase;
+}
+
+textarea:focus {
+  background-color: #C84B31;
+  border-color: #C84B31;
+  color: #ECDBBA;
+}
+
+textarea:hover {
+  background-color: #C84B31;
+  border-color: #C84B31;
+  color: #ECDBBA;
+
+}
+
+label {
+  display: block;
+}
+
+button {
+
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  background-color: #2D4263;
+  border-color: #ECDBBA;
+  border-style: solid;
+  border-radius: 10px;
+  width: 75%;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #C84B31;
+  color: #ECDBBA;
+}
+
+button:focus {
+  background-color: #C84B31;
+  color: #ECDBBA;
+}
+
+button p {
+  color: #fff;
+}
+
+span {
+  color: #ECDBBA;
+}
+
+.aviso {
+  font-size: 13px;
+  color: #ECDBBA;
+}
+
+h1 {
+  font-size: 39px;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #ECDBBA;
+}
+
+p {
+
+  font-size: 14px;
+  color: #ECDBBA;
+}
+
+::-webkit-input-placeholder {
+  color: #ECDBBA;
+}
+
+::-webkit-textarea-placeholder {
+  color: #ECDBBA;
+}
