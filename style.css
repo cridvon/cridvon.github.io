@@ -6,25 +6,6 @@
 
 }
 
-.color1 {
-    color: #060f19;
-}
-
-.color2 {
-    color: #192d37;
-}
-
-.color3 {
-    color: #2a5662;
-}
-
-.color4 {
-    color: #398296;
-}
-
-.color5 {
-    color: #4cb2cd;
-}
 
 body {
     text-align: center;
@@ -46,13 +27,13 @@ body {
     font: bold 18px verdana;
     display: table;
     border: 1px solid #ECDBBA;
-    background-color: #2D4263;
+    background-color: #F0DDBC;
     /* background-image: radial-gradient(circle at 50% -20.71%, #ff57d2 0, #ff4edb 12.5%, #f046e3 25%, #d63feb 37.5%, #b53cf2 50%, #8c3df9 62.5%, #4f40ff 75%, #0046ff 87.5%, #004bff 100%); */
 
 }
 
 .menu li:hover {
-    background-color: #C84B31;
+    background-color: #E99557;
     color: #ECDBBA;
 }
 
