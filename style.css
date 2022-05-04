@@ -6,6 +6,15 @@
 
 }
 
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+  }
+
+a:visited {
+    color: rgb(63, 160, 144);
+  }  
 
 body {
     text-align: center;
