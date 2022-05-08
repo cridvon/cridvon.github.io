@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    border-radius: 10px;
+
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
@@ -10,17 +10,22 @@ a {
     outline: none;
     text-decoration: none;
     padding: 2px 1px 0;
-  }
+
+    color: #000000;
+}
 
 a:visited {
-    color: rgb(63, 160, 144);
-  }  
+    color: white;
+}
+
 
 body {
     text-align: center;
     font: 16px;
-    color: #4cb2cd;
+    color: #dbdbdb;
     background-color: #060f19;
+    background-image: url("img/code.webp");
+
 
 }
 
@@ -28,6 +33,9 @@ body {
     padding: 5px 15px;
     text-align: center;
     color: #ECDBBA;
+    border-radius: 10px;
+    background-color: black;
+    opacity: 0.9;
 }
 
 .menu li {
@@ -35,19 +43,36 @@ body {
     padding: 8px;
     font: bold 18px verdana;
     display: inline-block;
-    border: 1px solid #ECDBBA;
-    background-color: #F0DDBC;
+    border: 2px solid #E62E72;
+    background-color: #1598cc;
+    border-radius: 25%;
     /* background-image: radial-gradient(circle at 50% -20.71%, #ff57d2 0, #ff4edb 12.5%, #f046e3 25%, #d63feb 37.5%, #b53cf2 50%, #8c3df9 62.5%, #4f40ff 75%, #0046ff 87.5%, #004bff 100%); */
 
 }
 
 .menu li:hover {
-    background-color: #E99557;
-    color: #ECDBBA;
+    background-color: #E62E72;
+    
 }
 
 div {
     padding: 20px;
 }
 
+.titulo {
 
+    background-color: #000000;
+    opacity: 0.9;
+}
+
+rojo {
+    color: #E62E72;
+}
+
+amarillo {
+    color: rgb(228, 228, 102);
+}
+
+li {
+    opacity: 1;
+}
