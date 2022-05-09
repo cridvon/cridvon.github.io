@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* declarado en HTML para su precarga*/
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: url('imagenes/loading.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .8;
+}
+h1 {
+  font-size: 20px;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+h2 {
+  font: bold 14px cursive;
+}
+
+header, section, footer, aside, nav, article, hgroup {
+display: block;
+}
+
+body {
+  text-align: center;
+}
+
+p{
+  text-align: justify;
+}
+iframe{
+
+}
+.agrupar {
+  width: 960px;
+  margin: 15px auto;
+  border: 1px solid black;
+  background: gray;
+}
+
+.encabezado{
+  background: #93ee7d;
+  padding: 20px;
+}
+
+.encabezado h1 {
+  text-align: center;
+}
+
+.menu{
+  background: #b2d9c6;
+  padding: 5px 15px;
+  text-align: center;
+}
+
+.menu li {
+  list-style: none;
+  padding: 8px;
+  font: bold 14px verdana;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.cuerpo {
+  margin:20px;
+  width: 600px;
+  float: left;
+}
+
+time {
+  color: #999;
+}
+
+article {
+background: #fffbcc;
+border: 1px solid black;
+padding: 20px;
+margin-bottom: 15px;
+}
+
+
+article footer {
+  text-align: right;
+  margin-top: 20px,auto;
+}
+.columna {
+  width: 300px;
+  float: left;
+  margin: 10px 0;
+}
+
+.columna blockquote {
+  border: 1px dashed black;
+  padding: 40px;
+  background: #93ee7d;
+  margin-bottom: 10px;
+}
+
+.pie {
+  clear: both;
+  padding: 20px;
+  background: #ccc0aa;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+  margin: 20px auto;
+}

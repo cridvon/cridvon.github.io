@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title> Mi Primer Blog </title>
+    */esta linea me permite agregar un icono*/
+    <link rel="icon" type="image/png" href="dragonball.png" />
+    <meta name="description"content="Esta es mi Primer página WEB"/>
+    <meta name = "author" content="Diego"/>
+    <meta name="keywords"content="Primer Sitio","Primer Pagina"/>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="estilos.css">
+   <!--librería jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  </head>
+  <body>
+   <!--Este div loader será el encargado de mostrar la imagen
+      de carga cuando la web esté cargando.-->
+    <div class="loader"></div>
+   <!--esconder la imagen de carga cuando la página haya terminado de cargar-->
+    <script type="text/javascript">
+    $(window).load(function() {
+        $(".loader").fadeOut("slow");
+    });
+    </script>
+    <marquee style="color:blue; text-shadow:5px 5px 5px purple;">
+      <h1>Contenido exclusivo para Animate a Programar</h1>
+    </marquee>
+    <div class="agrupar">
+        <header class="encabezado">
+           <h1> Mi Blog <strong><u>"Castiglioni Diego "</u></strong> </h1>
+        </header>
+          <nav class="menu">
+        <ul>
+          <li> Principal</li>
+          <li> Modelos</li>
+          <li> <a href="mailto:castiglionidiego1977@gmail.com?Subject=Interesado%20en%20el%20Curso">
+            Contacto </a> </li>
+        </ul>
+      </nav>
+
+      <section class="cuerpo">
+        <article>
+          <hgroup>
+            <h1> BMW </h1>
+            <h2> Producción Alemana </h2>
+          </hgroup>
+            <time datetime="10/03/2022"> Publicado 10-03-2022</time>
+            <p>El predecesor de BMW fue la empresa Rapp Motorenwerke GmbH, fundada en 1913 por Karl Rapp.
+              Cambiaron el nombre en abril de 1917, en primer lugar a BMW GmbH (sociedad limitada) para
+              terminar en BMW AG, un año más tarde tras su conversión en sociedad anónima. El ingeniero Max
+              Friz destacó en la joven empresa por desarrollar en 1917 un motor de avión de alta compresión,
+              gracias a lo cual se pudo reducir la pérdida de prestaciones en las alturas. Esta innovación tuvo
+              tal aceptación que BMW recibió un pedido de 2000 motores por parte de la administración del
+              ejército prusiano. El 17 de junio de 1919 se alcanzó el récord de altura de 9.760 metros con
+               un BMW IIIa.
+             </p>
+            <img src="bmw_logo.png" width="150" height="150">
+            <footer>
+              <p> Comentarios (10)</p>
+            </footer>
+            <a href="http://google.com"> Visita Google </a>
+        </article>
+
+        <article>
+          <hgroup>
+            <h1> Historia de BMW  </h1>
+            <h2> Camillo Castiglioni </h2>
+          </hgroup>
+            <time datetime="10/03/2022"> Publicado 10-03-2022</time>
+            <p> El final de la Primera Guerra Mundial y el Tratado de Versalles parecieron ser
+             la fase final de la empresa, ya que el tratado prohibía la fabricación durante 5 años de
+             motores de avión, por aquel entonces el único producto de BMW. En 1922 Camillo Castiglioni,
+             accionista principal de la compañía, abandonó la empresa para irse a
+             Bayerische Flugzeugwerke AG (BFW), llevándose también los derechos de la marca BMW.
+             <cite>Recusandae, id.</cite> </p>
+            <footer>
+              <p> Comentarios (0)</p>
+            </footer>
+        </article>
+      <article>
+              <img src="html5.png" width="50" height="50" alt="Logo HTML5">
+                <br>
+              <h2><a href="html5.pdf" download="Manual HTML.pdf" target="_blank">Recomendación Personal</a></h2>
+      </article>
+
+      </section>
+      <aside class="columna">
+        <p><b>Mark</b> dijo el 04/04/2014</p>
+        <blockquote>
+          <p>No creo que esto sea un cambio importante en el juego. De todos modos, si hay un cambio, también puede ser para mejor...</p>
+        </blockquote>
+        <blockquote>
+          <p>Debes estar bromeando Mark! Esto destruirá a la comunidad...</p>
+        </blockquote>
+        <blockquote>
+          <p>Esto es BMW</p>
+          <br>
+            <iframe width="230" height="150" src="https://www.youtube.com/embed/z7gW09bLYmA"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen>  </iframe>
+        </blockquote>
+       </aside>
+
+        <footer class="pie">
+
+          Derechos Reservados 2020-2022
+        </footer>
+  </div>
+  </body>
+</html>
