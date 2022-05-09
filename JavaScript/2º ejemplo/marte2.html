@@ -14,12 +14,38 @@
     </ul>
     <span>Digite tu Peso (KILOGRAMOS)</span>
     <p>
-  <a class="botonestilo" href="#" role="button" id="boton">Calcule Aquí</a>
+
+
+      <form>
+        <label for="framework">Select a JS Framework</label>
+        <select id="framework">
+          <option value="1">Angular</option>
+          <option value="2">React</option>
+          <option value="3">Vue.js</option>
+          <option value="4">Ember.js</option>
+        </select>
+        <br>
+        <button class="botonestilo" id="btn">Get the Selected Index</button>
+      </form>
   </p>
+<a class="botonestilo" href="#" role="button" id="boton">Calcule Aquí</a>
+
   <script>
 // seleccionamos el enlace
 var boton = document.getElementById("boton");
+var planet = document.querySelector("#planeta");
+
+
+const btn = document.querySelector('#btn');
+const sb = document.querySelector('#framework')
+btn.onclick = (event) => {
+event.preventDefault();
+// show the selected index
+alert(sb.selectedIndex);
+}; 
+
 // cuando se pulsa en el enlace
+
 boton.onclick = function(e) {
     // evitamos la acción por defecto
     e.preventDefault();
@@ -30,6 +56,7 @@ boton.onclick = function(e) {
     // lo añadimos al documento (y se ejecuta automaticamente)
     document.querySelector("body").appendChild(s);
     // borra el script del documento (para evitar basura si se ejecuta multiples veces)
+    
     s.remove();
 }
 </script>
