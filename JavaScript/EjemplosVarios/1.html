@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+  	var hoy = new Date();
+  	var otraFecha = new Date(2022,12,06);
+  	//A continuación obtenemos la diferencia en milisegundos
+  	var diferencia = otraFecha.getTime() - hoy.getTime();
+  	//Cálculo de días que hay en los milisegundos redondeando
+  	dias = Math.round(diferencia/(1000*60*60*24));
+  	document.write("Faltan " + dias + " días, para tu cumple");
+  </script>
+</head>
+
+<body>
+
+</body>
+</html>
