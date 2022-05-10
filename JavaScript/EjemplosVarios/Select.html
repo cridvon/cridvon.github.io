@@ -18,6 +18,8 @@
             var peso = document.getElementById('peso');
             var calculo = document.getElementById('result');
             var lab = document.getElementById('lab');
+            var grav = document.getElementById('grav');
+
             var planet = seleccion.options[seleccion.selectedIndex].text;
 
             switch (planet) {
@@ -52,34 +54,39 @@
 
             calculo.value = parseInt(peso.value) * gravedad / 9.8;
             lab.innerHTML = seleccion.options[seleccion.selectedIndex].text;
+            grav.innerHTML = seleccion.options[seleccion.selectedIndex].value;
+
         }
     </script>
 
 
 
     <form>
-        Tu Peso en la Tierra: <input type="text" name="peso" id="peso">
+        Tu Peso en la Tierra: <input type="text" name="peso" id="peso" maxlength="3">
         <br>
         Peso calculado en el planeta <label id="lab">  </label> <input type="text" name="result" id="result" disabled>
         <br>
-        Cambie el SELECT para ver la opción <b>onChange</b> <select id="select1" onChange="cambiarColor()">
-            <optgroup label="Cambie">
+        Seleccione un planeta para conocer su peso allí. <select id="select1" onChange="cambiarColor()">
+            <optgroup label="Planetas">
 
-                <option value="ff0000">Mercurio</option>
-                <option value="00ff00">Venus</option>
-                <option value="0000ff">Tierra</option>
-                <option value="ff0000">Marte</option>
-                <option value="00ff00">Jupiter</option>
-                <option value="0000ff">Saturno</option>
-                <option value="ff0000">Urano</option>
-                <option value="00ff00">Neptuno</option>
+                <option value="3.7">Mercurio</option>
+                <option value="8.87">Venus</option>
+                <option value="9.8">Tierra</option>
+                <option value="3.71">Marte</option>
+                <option value="24.79">Jupiter</option>
+                <option value="10.44">Saturno</option>
+                <option value="8.87">Urano</option>
+                <option value="11.15">Neptuno</option>
                 
             </optgroup>
         </select>
         <br>
         Número de índice seleccionado del objeto SELECT:<input type="text" id="text1"><br>
         Texto seleccionado:<input type="text" id="text2"><br>
-        Valor asociado:<input type="text" id="text3"><br>
+        La gravedad es: <label id="grav"></label> m/s²<br>
+        
+        
+        <!-- <input type="text" id="text3" maxlength="9" style="border: 0; width:40px ">  -->
 
     </form>
 </body>
