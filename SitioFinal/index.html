@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--esta linea me permite agregar un icono-->
+    <link rel="icon" type="image/png" href="img/Icon02.png" />
+    <meta name="description" content="Esta es mi Primer página WEB" />
+    <meta name="author" content="Cristian" />
+    <meta name="keywords" content="Cat" />
+    <meta charset="utf-8" />
+    <title>Wiki Cats</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--librería jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <!--Este div loader será el encargado de mostrar la imagen
+      de carga cuando la web esté cargando.-->
+    <div class="loader"></div>
+    <!--esconder la imagen de carga cuando la página haya terminado de cargar-->
+    <script type="text/javascript">
+        $(window).load(function () {
+            $(".loader").fadeOut(2500);
+        });
+    </script>
+
+
+    <div class="agrupar">
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li> <a href="#home">Principal</a></li>
+                    <li> Modelos</li>
+                    <li> <a href="mailto:cristian.chiavon@gmail.com?subjet=Contacto Sistema Solar">
+                            Contacto </a> </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="cuerpo">
+            PRUEBA
+
+        </div>
+
+
+        
+    </div>
+    
+
+
+</body>
+
+</html>
