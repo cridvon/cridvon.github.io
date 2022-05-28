@@ -1,6 +1,15 @@
 /*------------------------------------------------
 	Base Styles
 -------------------------------------------------*/
+.encargado {
+
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;  
+}
+
+
 body {
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
@@ -631,6 +640,7 @@ label {
   position: absolute;
   right: 0;
   top: 0;
+  
 }
 
 .author-image-large img {
