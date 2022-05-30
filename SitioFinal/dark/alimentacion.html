@@ -46,35 +46,31 @@
 
             switch (edadValue) {
                 case 'cachorro':
-                    txtInfoAlimen = "Cachorrroooooooo"
+                    txtInfoAlimen = "En los recién nacidos, lo ideal es que coman cada dos o tres horas, así los primeros 10-15 días, tanto de día como de noche. Esas tomas se irán espaciando poco a poco, de 3 a 4 horas y, finalmente, de 6 horas. A partir de las 3 o 4 semanas de vida se le empezará a alimentar con comida especial para gatitos, siempre combinándola con la leche materna o leche maternizada. Así hasta su destete. A partir de las 8 semanas y hasta los 6 meses necesitarán entre 3 y 4 raciones al día, mientras que a partir de los 6 meses ya les puedes reducir el número de tomas a 2 diarias."
                     gravedad = 3.7;
                     break;
                 case '2':
-                    txtInfoAlimen = "2 kilossss"
+                    txtInfoAlimen = "Un gato que pesa 2 kg debería comer entre 30 y 40g."
                     gravedad = 8.87;
                     break;
                 case '3':
-                    txtInfoAlimen = "3 kilossss"
+                    txtInfoAlimen = "Un gato que pesa 3 kg debería comer entre 40 y 55g."
                     gravedad = 3.71;
                     break;
                 case '4':
-                    txtInfoAlimen = "4 kilossss"
+                    txtInfoAlimen = "Un gato que pesa 4 kg debería comer entre 45 y 65g."
                     gravedad = 9.8;
                     break;
                 case '5':
-                    txtInfoAlimen = "5 kilossss"
+                    txtInfoAlimen = "Un gato que pesa 5 kg debería comer entre 55 y 75g."
                     gravedad = 24.79;
                     break;
                 case '6':
-                    txtInfoAlimen = "6 kilossss"
+                    txtInfoAlimen = "Un gato de más de 6 kg debería comer 11g por kilo de su peso corporal."
                     gravedad = 10.44;
                     break;
-                case '8':
-                    txtInfoAlimen = "8 kiloooosss"
-                    gravedad = 8.87;
-                    break;
                 case 'senior':
-                    txtInfoAlimen = "seniooorrr"
+                    txtInfoAlimen = "Los gatos mayores de siete años en adelante deben mantener el mismo régimen de alimentación que los adultos en cuanto a la frecuencia, y cambiar a un pienso para gatos sénior que les aporte todos los nutrientes necesarios sin el riesgo de coger peso."
                     gravedad = 11.15;
                     break;
                 default:
@@ -132,29 +128,25 @@
                             <div class="page-title">
                                 <h2>Alimen<span class="primary">tación</span> <span class="title-bg">Alimentacio</span>
                                 </h2>
-                                <p>Elegir adecuadamente la comida de nuestro gato es imprescindible para su estado de
-                                    salud ya que, un desequilibrio en su alimentación puede llevar a problemas de salud
-                                    que acorten su esperanza de vida.</p>
+                                <p style="text-align: justify;">Elegir adecuadamente la comida de nuestro gato es
+                                    imprescindible para su estado de salud ya que, un desequilibrio en su alimentación puede llevar a problemas de salud que acorten su esperanza de vida.</p>
                                 <p></p>
                             </div>
                             <form class="formAlimento" style="text-align: center;">
                                 Seleccione edad | peso de su gato. <select class="selector" id="select1"
                                     onChange="cambiarColor()">
                                     <optgroup label="Cachorro [menos 1 año]">
-                                        <option value="cachorro">Cachorro</option>
+                                        <option value="cachorro" selected>Cachorro</option>
 
                                     </optgroup>
                                     <optgroup label="Adulto [1 a 6 años]">
 
                                         <option value="2">2 kg</option>
                                         <option value="3">3 kg</option>
-                                        <option value="4" selected>4 kg</option>
+                                        <option value="4">4 kg</option>
                                         <option value="5">5 kg</option>
                                         <option value="6">6 kg</option>
-                                        <option value="8">8 kg o más</option>
-                                        
-                                        
-
+                                                                                                            
                                     </optgroup>
                                     <optgroup label="Senior [+7 años]">
                                         <option value="senior">Senior</option>
@@ -171,10 +163,7 @@
                                 Número de índice seleccionado del objeto SELECT:<input type="text" id="text1"><br>
                                 Texto seleccionado:<input type="text" id="text2"><br>
                                 La gravedad es: <label id="grav"></label> m/s²<br> -->
-                                <textarea class="txtAlimento" id="txtAlimento">
-
-                                </textarea>
-
+                                <textarea class="txtAlimento" id="txtAlimento" style="text-align: justify;" disabled>En los recién nacidos, lo ideal es que coman cada dos o tres horas, así los primeros 10-15 días, tanto de día como de noche. Esas tomas se irán espaciando poco a poco, de 3 a 4 horas y, finalmente, de 6 horas. A partir de las 3 o 4 semanas de vida se le empezará a alimentar con comida especial para gatitos, siempre combinándola con la leche materna o leche maternizada. Así hasta su destete. A partir de las 8 semanas y hasta los 6 meses necesitarán entre 3 y 4 raciones al día, mientras que a partir de los 6 meses ya les puedes reducir el número de tomas a 2 diarias.</textarea>
 
                                 <!-- <input type="text" id="text3" maxlength="9" style="border: 0; width:40px ">  -->
 
@@ -199,10 +188,10 @@
                 <nav class="page-nav clear">
                     <div class="container">
                         <div class="flex flex-middle space-between">
-                            <span class="prev-page"><a href="bienvenida.html" class="link">&larr; Anterior</a></span>
+                            <span class="prev-page"><a href="cuidado.html" class="link">&larr; Anterior</a></span>
                             <span class="copyright hidden-xs">Copyright &copy; 2022 Wiki Cats, All Rights
                                 Reserved.</span>
-                            <span class="next-page"><a href="cuidado.html" class="link">Siguiente &rarr;</a></span>
+                            <span class="next-page"><a href="historia.html" class="link">Siguiente &rarr;</a></span>
                         </div>
                     </div>
                     <!-- /.page-nav -->

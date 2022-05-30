@@ -1,5 +1,5 @@
 <?php
-    $to = "youremail@.com"; // replace this mail with yours
+    $to = "cristian.chiavon@gmail.com"; // replace this mail with yours
     $from = $_SERVER['PHP_SELF']." ".$_POST["email"];
     $fname = $_POST["name"];
     $email = $_POST["email"];
@@ -14,7 +14,7 @@
     $body .= " \n\n\t Message: ".$message;
 
     if(mail($to, $subject, $body, $headers)){
-        echo '<label class="success">Sent your <b>e-mail.</b></label>';
+        echo '<label class="success">Se a enviado tu <b>e-mail.</b></label>';
     }else{
-        echo '<label class="error">Something went wrong! please try again.</label>';
+        echo '<label class="error">Algo falló, intenta nuevamente.</label>';
     }
