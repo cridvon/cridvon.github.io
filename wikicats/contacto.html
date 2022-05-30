@@ -88,31 +88,12 @@
                                         </div>
                                         <div class="media-body">
                                             <h4>Whatsapp</h4>
-                                            <p><a href="https://wa.me/549113364338560" target="_blank">Enviar Whatsapp</a></p>
+                                            <p><a id="wasap" href=" https://wa.me/549113364338560" target="_blank">Enviar
+                                                    Whatsapp</a></p>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- /.contact-block -->
-                                <!--
-                                <ul class="contact-social">
-                                    <li>
-                                        <span class="contact-social-hex"></span>
-                                        <a href="www.fb.com/themefisher"><i class="tf-ion-social-facebook"></i></a>
-                                    </li>
-                                    <li>
-                                        <span class="contact-social-hex"></span>
-                                        <a href="www.twitter.com/themefisher"><i class="tf-ion-social-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <span class="contact-social-hex"></span>
-                                        <a href="#"><i class="tf-ion-social-google"></i></a>
-                                    </li>
-                                    <li>
-                                        <span class="contact-social-hex"></span>
-                                        <a href="www.dribbble.com/themefisher"><i class="tf-ion-social-dribbble"></i></a>
-                                    </li>
-                                </ul>
-                                -->
+                               
                             </div>
                             <div class="col-xs-12 col-sm-7 col-md-7 col-md-offset-1 col-lg-offset-2">
                                 <div class="section-title clear">
@@ -188,5 +169,18 @@
         <script src="js/jquery-validation.min.js"></script>
         <script src="js/form.min.js"></script>
         <script src="js/main.js"></script>
+
+        <script>
+            // seleccionamos el enlace
+            var boton = document.getElementById("wasap");
+
+            boton.onclick = (event) => {
+
+                var z = confirm("Está por abrir Whatsapp web para enviar un mensaje. \n ¿Desea hacerlo?");
+                if (z == false) {
+                    event.preventDefault();
+                }
+            };
+        </script>
     </body>
 </html>

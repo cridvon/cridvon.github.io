@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<p><a id="wasap" href="https://wa.me/549113364338560" target="_blank">Enviar Whatsapp</a></p>
+
+<script>
+    // seleccionamos el enlace
+    var boton = document.getElementById("wasap");
+    
+    boton.onclick = (event) => {
+
+        var z = confirm("Está por abrir Whatsapp web para enviar un mensaje. \n ¿Desea hacerlo?");
+        if (z == false) {
+        event.preventDefault();
+        } 
+    };
+    
+</script>
+
+
+</body>
+</html>

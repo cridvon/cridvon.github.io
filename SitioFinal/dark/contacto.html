@@ -88,7 +88,7 @@
                                         </div>
                                         <div class="media-body">
                                             <h4>Whatsapp</h4>
-                                            <p><a href="https://wa.me/549113364338560" target="_blank">Enviar Whatsapp</a></p>
+                                            <p><a id="wasap" href="https://wa.me/549113364338560" target="_blank">Enviar Whatsapp</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -188,5 +188,20 @@
         <script src="js/jquery-validation.min.js"></script>
         <script src="js/form.min.js"></script>
         <script src="js/main.js"></script>
+
+        <script>
+            // seleccionamos el enlace
+            var boton = document.getElementById("wasap");
+
+            boton.onclick = (event) => {
+
+                var z = confirm("Está por abrir Whatsapp web para enviar un mensaje. \n ¿Desea hacerlo?");
+                if (z == false) {
+                    event.preventDefault();
+                }
+            };
+        </script>
+
+
     </body>
 </html>
