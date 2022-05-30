@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+    <!-- meta charset -->
+    <meta charset="utf-8">
+    <!-- site title -->
+    <title>WikiCats | Alimentación</title>
+    <!-- meta description -->
+    <meta name="description" content="">
+    <!-- mobile viwport meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- fevicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/Icon02.png">
+
+    <!-- ================================
+        CSS Files
+        ================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Open+Sans:400,600,700,800"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/themefisher-fonts.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/dark.css">
+    <link id="color-changer" rel="stylesheet" href="css/colors/color-0.css">
+</head>
+
+<body class="dark">
+
+    <script>
+        function cambiarColor() {
+            var seleccion = document.getElementById('select1');
+            //document.getElementById('text1').value = seleccion.selectedIndex;
+            //document.getElementById('text2').value = seleccion.options[seleccion.selectedIndex].text;
+            // document.getElementById('text3').value = seleccion.options[seleccion.selectedIndex].value;
+
+            //var peso = document.getElementById('peso');
+            //var calculo = document.getElementById('resultado');
+            //var lab = document.getElementById('lab');
+            //var grav = document.getElementById('grav');
+            var txtAlim = document.getElementById('txtAlimento');
+
+            var edad = seleccion.options[seleccion.selectedIndex].text;
+            var edadValue = seleccion.options[seleccion.selectedIndex].value;
+
+            switch (edadValue) {
+                case 'cachorro':
+                    txtInfoAlimen = "En los recién nacidos, lo ideal es que coman cada dos o tres horas, así los primeros 10-15 días, tanto de día como de noche. Esas tomas se irán espaciando poco a poco, de 3 a 4 horas y, finalmente, de 6 horas. A partir de las 3 o 4 semanas de vida se le empezará a alimentar con comida especial para gatitos, siempre combinándola con la leche materna o leche maternizada. Así hasta su destete. A partir de las 8 semanas y hasta los 6 meses necesitarán entre 3 y 4 raciones al día, mientras que a partir de los 6 meses ya les puedes reducir el número de tomas a 2 diarias."
+                    gravedad = 3.7;
+                    break;
+                case '2':
+                    txtInfoAlimen = "Un gato que pesa 2 kg debería comer entre 30 y 40g."
+                    gravedad = 8.87;
+                    break;
+                case '3':
+                    txtInfoAlimen = "Un gato que pesa 3 kg debería comer entre 40 y 55g."
+                    gravedad = 3.71;
+                    break;
+                case '4':
+                    txtInfoAlimen = "Un gato que pesa 4 kg debería comer entre 45 y 65g."
+                    gravedad = 9.8;
+                    break;
+                case '5':
+                    txtInfoAlimen = "Un gato que pesa 5 kg debería comer entre 55 y 75g."
+                    gravedad = 24.79;
+                    break;
+                case '6':
+                    txtInfoAlimen = "Un gato de más de 6 kg debería comer 11g por kilo de su peso corporal."
+                    gravedad = 10.44;
+                    break;
+                case 'senior':
+                    txtInfoAlimen = "Los gatos mayores de siete años en adelante deben mantener el mismo régimen de alimentación que los adultos en cuanto a la frecuencia, y cambiar a un pienso para gatos sénior que les aporte todos los nutrientes necesarios sin el riesgo de coger peso."
+                    gravedad = 11.15;
+                    break;
+                default:
+                    gravedad = 9.8;
+                    break;
+            }
+
+            //calculo.value = parseInt(peso.value) * gravedad / 9.8;
+            //lab.innerHTML = seleccion.options[seleccion.selectedIndex].text;
+            //grav.innerHTML = seleccion.options[seleccion.selectedIndex].value;
+            txtAlim.innerHTML = txtInfoAlimen;
+
+        }
+    </script>
+
+    <div class="preloader">
+        <div class="loading-mask"></div>
+        <div class="loading-mask"></div>
+        <div class="loading-mask"></div>
+        <div class="loading-mask"></div>
+        <div class="loading-mask"></div>
+    </div>
+
+    <!-- <div class="preview-wrapper">
+            <div class="switcher-head">
+                <span>Style Switcher</span>
+                <div class="switcher-trigger tf-tools"></div>
+            </div>
+
+            <div class="switcher-body">
+                <h4>Choose Color:</h4>
+                <ul class="color-options list-none">
+                    <li class="c0" data-color="color-0" title="Default">Default</li>
+                    <li class="c1" data-color="color-1" title="Red">Red</li>
+                    <li class="c2" data-color="color-2" title="Green">Green</li>
+                    <li class="c3" data-color="color-3" title="Blue">Blue</li>
+                </ul>
+            </div>
+        </div> -->
+
+    <main class="site-wrapper">
+        <div class="pt-table">
+            <div class="pt-tablecell page-welcome relative">
+                <!-- .close -->
+                <a href="./index.html" class="page-close"><i class="tf-ion-close"></i></a>
+                <!-- /.close -->
+
+                <div class="author-image-large">
+                    <img src="img/cat_alimentacion.png" alt="">
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 col-lg-7">
+                            <div class="page-title">
+                                <h2>Alimen<span class="primary">tación</span> <span class="title-bg">Alimentacio</span>
+                                </h2>
+                                <p style="text-align: justify;">Elegir adecuadamente la comida de nuestro gato es
+                                    imprescindible para su estado de salud ya que, un desequilibrio en su alimentación puede llevar a problemas de salud que acorten su esperanza de vida.</p>
+                                <p></p>
+                            </div>
+                            <form class="formAlimento" style="text-align: center;">
+                                Seleccione edad | peso de su gato. <select class="selector" id="select1"
+                                    onChange="cambiarColor()">
+                                    <optgroup label="Cachorro [menos 1 año]">
+                                        <option value="cachorro" selected>Cachorro</option>
+
+                                    </optgroup>
+                                    <optgroup label="Adulto [1 a 6 años]">
+
+                                        <option value="2">2 kg</option>
+                                        <option value="3">3 kg</option>
+                                        <option value="4">4 kg</option>
+                                        <option value="5">5 kg</option>
+                                        <option value="6">6 kg</option>
+                                                                                                            
+                                    </optgroup>
+                                    <optgroup label="Senior [+7 años]">
+                                        <option value="senior">Senior</option>
+
+                                    </optgroup>
+                                </select>
+                                <br>
+                                <!-- Tu Peso en la Tierra: <input type="text" name="peso" id="peso" maxlength="3">
+                                <br>
+                                Peso calculado en el planeta <label id="lab"> </label> <input type="text"
+                                    name="resultado" id="resultado">
+                                <br>
+                                
+                                Número de índice seleccionado del objeto SELECT:<input type="text" id="text1"><br>
+                                Texto seleccionado:<input type="text" id="text2"><br>
+                                La gravedad es: <label id="grav"></label> m/s²<br> -->
+                                <textarea class="txtAlimento" id="txtAlimento" style="text-align: justify;" disabled>En los recién nacidos, lo ideal es que coman cada dos o tres horas, así los primeros 10-15 días, tanto de día como de noche. Esas tomas se irán espaciando poco a poco, de 3 a 4 horas y, finalmente, de 6 horas. A partir de las 3 o 4 semanas de vida se le empezará a alimentar con comida especial para gatitos, siempre combinándola con la leche materna o leche maternizada. Así hasta su destete. A partir de las 8 semanas y hasta los 6 meses necesitarán entre 3 y 4 raciones al día, mientras que a partir de los 6 meses ya les puedes reducir el número de tomas a 2 diarias.</textarea>
+
+                                <!-- <input type="text" id="text3" maxlength="9" style="border: 0; width:40px ">  -->
+
+                            </form>
+
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+                    </div> <!-- /.row -->
+
+                </div> <!-- /.container -->
+
+                <nav class="page-nav clear">
+                    <div class="container">
+                        <div class="flex flex-middle space-between">
+                            <span class="prev-page"><a href="cuidado.html" class="link">&larr; Anterior</a></span>
+                            <span class="copyright hidden-xs">Copyright &copy; 2022 Wiki Cats, All Rights
+                                Reserved.</span>
+                            <span class="next-page"><a href="historia.html" class="link">Siguiente &rarr;</a></span>
+                        </div>
+                    </div>
+                    <!-- /.page-nav -->
+                </nav>
+                <!-- /.container -->
+
+            </div> <!-- /.pt-tablecell -->
+        </div> <!-- /.pt-table -->
+    </main> <!-- /.site-wrapper -->
+
+    <!-- ================================
+        JavaScript Libraries
+        ================================= -->
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery-validation.min.js"></script>
+    <script src="js/form.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
