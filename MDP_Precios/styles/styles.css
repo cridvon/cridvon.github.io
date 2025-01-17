@@ -48,9 +48,46 @@ header {
     margin-top: 10px;
 }
 
+/* Estilos para la galería */
+.image-gallery {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
 .product-image {
     max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    max-height: 200px;
+    display: block;
+    border-radius: 5px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
 }

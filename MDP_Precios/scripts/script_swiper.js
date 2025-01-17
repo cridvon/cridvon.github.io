@@ -16,23 +16,21 @@ async function loadExcelFile() {
         const pricingContainer = document.getElementById('pricing');
         pricingContainer.innerHTML = ''; // Limpia cualquier contenido previo
 
-        jsonData.forEach((row, index) => {
+        jsonData.forEach((row) => {
             const item = document.createElement('div');
             item.classList.add('pricing-item');
 
-            // Crear un contenedor para las imágenes
-            let imagesHTML = `<div class="image-gallery" id="gallery-${index}">`;
+            // Crear un contenedor Swiper para las imágenes
+            let imagesHTML = '<div class="swiper-container"><div class="swiper-wrapper">';
             for (let key in row) {
                 if (key.startsWith('Imagen') && row[key]) {
                     imagesHTML += `
-                        <img src="${row[key]}" alt="${row.Producto}" class="product-image hidden" />
-                    `;
+                        <div class="swiper-slide">
+                            <img src="${row[key]}" alt="${row.Producto}" class="product-image" />
+                        </div>`;
                 }
             }
-            imagesHTML += `
-                <button class="prev-btn" onclick="changeImage(${index}, -1)">&#10094;</button>
-                <button class="next-btn" onclick="changeImage(${index}, 1)">&#10095;</button>
-            </div>`;
+            imagesHTML += '</div><div class="swiper-pagination"></div></div>';
 
             // Generar el contenido del producto
             item.innerHTML = `
@@ -43,29 +41,17 @@ async function loadExcelFile() {
             `;
             pricingContainer.appendChild(item);
 
-            // Mostrar la primera imagen al inicio
-            const gallery = document.querySelector(`#gallery-${index}`);
-            gallery.querySelector('.product-image').classList.remove('hidden');
+            // Inicializar Swiper después de renderizar
+            new Swiper('.swiper-container', {
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
         });
     } catch (error) {
         console.error('Error al cargar el archivo Excel:', error);
     }
-}
-
-// Función para cambiar la imagen en la galería
-function changeImage(galleryIndex, direction) {
-    const gallery = document.querySelector(`#gallery-${galleryIndex}`);
-    const images = gallery.querySelectorAll('.product-image');
-    let currentIndex = Array.from(images).findIndex(img => !img.classList.contains('hidden'));
-
-    // Ocultar la imagen actual
-    images[currentIndex].classList.add('hidden');
-
-    // Calcular el índice de la siguiente imagen
-    currentIndex = (currentIndex + direction + images.length) % images.length;
-
-    // Mostrar la nueva imagen
-    images[currentIndex].classList.remove('hidden');
 }
 
 // Cargar el archivo Excel al iniciar la página
