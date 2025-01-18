@@ -39,7 +39,10 @@ async function loadExcelFile() {
                 ${imagesHTML}
                 <h2>${row.Producto}</h2>
                 <p>${row.Descripción}</p>
-                <span class="price">$${parseFloat(row.Precio).toFixed(2)}</span>
+                <div class="prices">
+                    <span class="price usd">USD: $${parseFloat(row.PrecioUSD).toFixed(2)}</span>
+                    <span class="price pesos">Pesos: $${parseFloat(row.PrecioPesos).toFixed(2)}</span>
+                </div>
             `;
             pricingContainer.appendChild(item);
 

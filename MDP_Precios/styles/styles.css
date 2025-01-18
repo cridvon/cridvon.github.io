@@ -91,3 +91,24 @@ header {
 .next-btn {
     right: 10px;
 }
+
+
+/* Estilos para los precios */
+.prices {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.price.usd {
+    color: #4CAF50;
+}
+
+.price.pesos {
+    color: #FF5722;
+}
